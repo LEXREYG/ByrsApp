@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "da33105f-9cea-42ba-bb90-92f21a4107f5",
+		"name": "G3M1_E2_sprint2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://byrsapp.herokuapp.com/tipos_movimiento/",
+					"protocol": "https",
+					"host": [
+						"byrsapp",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"tipos_movimiento",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idTipoMovimiento\": 5, \"value\": \"365000\"}"
+				},
+				"url": {
+					"raw": "https://byrsapp.herokuapp.com/ingreso",
+					"protocol": "https",
+					"host": [
+						"byrsapp",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"ingreso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"aleksander\", \r\n    \"password\": \"5555\",\r\n    \"balance\": 15000000\r\n}"
+				},
+				"url": {
+					"raw": "https://byrsapp.herokuapp.com/users/",
+					"protocol": "https",
+					"host": [
+						"byrsapp",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
