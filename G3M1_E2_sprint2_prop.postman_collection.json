@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "364216f6-32dc-408c-979a-c11e519695e1",
+		"name": "G3M1_E2_sprint2_prop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get persona",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post persona Elon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 0,\n        \"nombres\": \"Elon\",\n        \"apellidos\": \"Musk\",\n        \"fecha_nacimiento\": \"1971-06-28T00:00:00\",\n        \"nacionalidad\": \"Sudafricano\",\n        \"documento\": {\n            \"id\": 0,\n            \"tipo_documento\": {\n                \"id\": 0,\n                \"nombre\": \"\",\n                \"vence\": false\n            },\n            \"codigo\": \"\",\n            \"fecha_vigencia\": \"9999-12-31T23:59:59.999999\"\n        }\n    }"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/persona",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put persona Elon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 0,\n        \"nombres\": \"Elon\",\n        \"apellidos\": \"Musk\",\n        \"fecha_nacimiento\": \"1971-06-28T00:00:00\",\n        \"nacionalidad\": \"Sudafricano\",\n        \"documento\": {\n            \"id\": 0,\n            \"tipo_documento\": {\n                \"id\": 0,\n                \"nombre\": \"\",\n                \"vence\": false\n            },\n            \"codigo\": \"\",\n            \"fecha_vigencia\": \"9999-12-31T23:59:59.999999\"\n        }\n    }"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/persona",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post persona Linus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 0,\n        \"nombres\": \"Elon\",\n        \"apellidos\": \"Musk\",\n        \"fecha_nacimiento\": \"1971-06-28T00:00:00\",\n        \"nacionalidad\": \"Sudafricano\",\n        \"documento\": {\n            \"id\": 0,\n            \"tipo_documento\": {\n                \"id\": 0,\n                \"nombre\": \"\",\n                \"vence\": false\n            },\n            \"codigo\": \"\",\n            \"fecha_vigencia\": \"9999-12-31T23:59:59.999999\"\n        }\n    }"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/persona",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post persona Linus Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 0,\n        \"nombres\": \"Elon\",\n        \"apellidos\": \"Musk\",\n        \"fecha_nacimiento\": \"1971-06-28T00:00:00\",\n        \"nacionalidad\": \"Sudafricano\",\n        \"documento\": {\n            \"id\": 0,\n            \"tipo_documento\": {\n                \"id\": 0,\n                \"nombre\": \"\",\n                \"vence\": false\n            },\n            \"codigo\": \"\",\n            \"fecha_vigencia\": \"9999-12-31T23:59:59.999999\"\n        }\n    }"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/persona",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"persona"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
