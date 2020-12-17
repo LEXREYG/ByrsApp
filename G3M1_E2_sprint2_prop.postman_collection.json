@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "87815575-13d6-4660-9371-60309bea9e96",
+		"name": "G3M1_E2_sprint2_heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get persona",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post persona Elon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 0,\n        \"nombres\": \"Elon\",\n        \"apellidos\": \"Musk\",\n        \"fecha_nacimiento\": \"1971-06-28T00:00:00\",\n        \"nacionalidad\": \"Sudafricano\",\n        \"documento\": {\n            \"id\": 0,\n            \"tipo_documento\": {\n                \"id\": 0,\n                \"nombre\": \"\",\n                \"vence\": false\n            },\n            \"codigo\": \"\",\n            \"fecha_vigencia\": \"9999-12-31T23:59:59.999999\"\n        }\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gastos-api.herokuapp.com/persona/",
+					"protocol": "https",
+					"host": [
+						"gastos-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"persona",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post persona Linus",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 0,\n        \"nombres\": \"Linus\",\n        \"apellidos\": \"Tolvars\",\n        \"fecha_nacimiento\": \"1969-12-28T00:00:00\",\n        \"nacionalidad\": \"Finlandes\",\n        \"documento\": {\n            \"id\": 3,\n            \"tipo_documento\": {\n                \"id\": 2,\n                \"nombre\": \"Cédula de Ciudadanía\",\n                \"vence\": false\n            },\n            \"codigo\": \"99887766\",\n            \"fecha_vigencia\": \"9999-12-31T23:59:59.999999\"\n        }\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gastos-api.herokuapp.com/persona/",
+					"protocol": "https",
+					"host": [
+						"gastos-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"persona",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put persona Linus",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 2,\n        \"nombres\": \"Linus\",\n        \"apellidos\": \"Tolvars\",\n        \"fecha_nacimiento\": \"1969-12-28T00:00:00\",\n        \"nacionalidad\": \"Finlandia\",\n        \"documento\": {\n            \"id\": 3,\n            \"tipo_documento\": {\n                \"id\": 2,\n                \"nombre\": \"Cédula de Ciudadanía\",\n                \"vence\": false\n            },\n            \"codigo\": \"99887766\",\n            \"fecha_vigencia\": \"9999-12-31T23:59:59.999999\"\n        }\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gastos-api.herokuapp.com/persona/2",
+					"protocol": "https",
+					"host": [
+						"gastos-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"persona",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put persona Elon",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\": 1,\n        \"nombres\": \"Elon\",\n        \"apellidos\": \"Musk\",\n        \"fecha_nacimiento\": \"1971-06-28T00:00:00\",\n        \"nacionalidad\": \"Sudafrica\",\n        \"documento\": {\n            \"id\": 0,\n            \"tipo_documento\": {\n                \"id\": 0,\n                \"nombre\": \"\",\n                \"vence\": false\n            },\n            \"codigo\": \"\",\n            \"fecha_vigencia\": \"9999-12-31T23:59:59.999999\"\n        }\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gastos-api.herokuapp.com/persona/1",
+					"protocol": "https",
+					"host": [
+						"gastos-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"persona",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
