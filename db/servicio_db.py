@@ -58,18 +58,6 @@ def initialize():
     # creo una persona, para evitar tanto codigo podria crear una funcion __init__ con valores por defecto
     mark = persona(id = 0,nombres = "Mark",apellidos = "Zuckerberg",fecha_nacimiento = datetime(1984,5,14),nacionalidad = "Estadounidense",
     documento = documento(id=0,tipo_documento = tipo_documento(),codigo = "",fecha_vigencia = datetime.max))
-    #mark = persona(0,"Mark","Zuckerberg",datetime(1984,5,14),"Estadounidense",documento(0,tipo_documento(0,"No aplica",False),"",datetime.max))
-    
-    '''
-    mark.id = 0
-    mark.nombres = "Mark"
-    mark.apellidos = "Zuckerberg"
-    fecha = datetime(1984,5,14)
-    mark.fecha_nacimiento = fecha
-    mark.nacionalidad = "Estadounidense"
-    markdoc = documento()
-    markdoc.id = 0 
-    mark.documento = markdoc'''
     persona_db.append(mark)
 
 
