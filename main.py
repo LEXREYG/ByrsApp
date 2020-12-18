@@ -3,6 +3,7 @@ from models.tipo_documento import tipo_documento
 from models.documento import documento
 from models.persona import persona
 from db import servicio_db
+from fastapi.middleware.cors import CORSMiddleware
 '''
 from models.tipo_mov_API import TipoMovAPI
 from models.ingreso import Ingreso
@@ -16,6 +17,21 @@ from db.user_db import update_user, get_user
 api = FastAPI()
 service = servicio_db
 service.initialize()
+
+origins = [
+    "http://localhost",
+    "http://localhost:8080",
+]
+
+api.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 
 @api.get("/")
 async def home():

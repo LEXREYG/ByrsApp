@@ -49,11 +49,11 @@ def update_persona(id: int, persona: persona):
 
 def initialize():
     # creo 3 tipos de documento
-    noaplica = tipo_documento(id = 0,nombre = "No aplica",vence = False)
+    noaplica = tipo_documento(id = 0,nombre = "No aplica",abreviatura = "N/A",vence = False)
     tipo_documento_db.append(noaplica)
-    cedula = tipo_documento(id = 1,nombre = "Cédula de ciudadania",vence = False)
+    cedula = tipo_documento(id = 1,nombre = "Cédula de ciudadania",abreviatura = "C.C.",vence = False)
     tipo_documento_db.append(cedula)
-    ce = tipo_documento(id = 2,nombre = "Cédula de extranjería",vence = False)
+    ce = tipo_documento(id = 2,nombre = "Cédula de extranjería",abreviatura = "C.E.",vence = False)
     tipo_documento_db.append(ce)
     # creo una persona, para evitar tanto codigo podria crear una funcion __init__ con valores por defecto
     mark = persona(id = 0,nombres = "Mark",apellidos = "Zuckerberg",fecha_nacimiento = datetime(1984,5,14),nacionalidad = "Estadounidense",
