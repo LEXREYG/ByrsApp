@@ -45,9 +45,14 @@ def get_all_tipo_documento():
 def post_tipo_documento(item: tipo_documento):
     return service.save_tipo_documento(item)
 
-@api.get("/persona/{item_id}")
+@api.get("/persona/")
 def get_all_persona():
     return service.persona_db
+
+@api.get("/persona/{item_id}")
+def get_persona_id(item_id: int):
+    return service.get_persona_id(item_id)
+
 
 @api.post("/persona/")
 def post_persona(item: persona):

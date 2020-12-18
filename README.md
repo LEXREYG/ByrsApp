@@ -1,7 +1,8 @@
+
 # cajero_api
 ## Clases 
 
-``classDiagram
+classDiagram
     TipoMovimiento o-- Ingreso
       
     class Ingreso{
@@ -23,4 +24,3 @@
         +int last_balance
     }
 
-``

@@ -26,7 +26,7 @@ def save_documento(documento: documento):
 def save_persona(persona: persona):
     auto_persona["id"] = auto_persona["id"] + 1
     persona.id = auto_persona["id"]
-    persona.documento = documento(tipo_documento = tipo_documento(id = 0),id = 0,codigo = "",fecha_vigencia = datetime.now())
+    #persona.documento = documento(tipo_documento = tipo_documento(id = 0),id = 0,codigo = "",fecha_vigencia = datetime.now())
         #persona.documento = documento(tipo_documento = 0)
     if persona.documento.tipo_documento.id == 0:
         persona.documento = save_documento(persona.documento)
@@ -42,6 +42,12 @@ def update_persona(id: int, persona: persona):
     persona_db[id] = persona
     
     return persona
+
+def get_persona_id(id: int):
+    if auto_persona["id"]>=id:
+        return persona_db[id]
+    else:
+        return None
 
         
 
