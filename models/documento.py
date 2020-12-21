@@ -7,10 +7,3 @@ class documento(BaseModel):
     tipo_documento: tipo_documento
     codigo: str
     fecha_vigencia: datetime
-'''
-    def __init__(self,id,tipo_documento,codigo,fecha_vigencia):
-        self.id = id
-        self.tipo_documento = tipo_documento
-        self.codigo = codigo
-        self.fecha_vigencia = fecha_vigencia
-'''
