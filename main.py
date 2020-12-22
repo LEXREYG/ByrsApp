@@ -11,8 +11,8 @@ from fastapi.middleware.cors import CORSMiddleware
 api = FastAPI()
 
 origins = [
-    "http://localhost",
-    "http://localhost:8080",
+    "https://byrsapp-vue.herokuapp.com/",
+    "https://byrsapp-vue.herokuapp.com/:8080",
 ]
 
 api.add_middleware(
